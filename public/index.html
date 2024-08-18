@@ -4,21 +4,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Posts</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Porfolio</title>
 </head>
 
 <body>
-  <h1>Posts</h1>
+  <!-- Start Header -->
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a href="/">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="/about.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="/">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End Header -->
 
-  <form id="add-post-form">
-    <label for="title">Title:</label><br />
-    <input type="text" id="title" name="title" /><br />
-    <button type="submit">Add Post</button>
-  </form>
-
-  <ul id="output"></ul>
-  <button id="get-posts-btn">Get Posts</button>
-  <script src="./js/main.js"></script>
+  <!-- Start Hero -->
+  <section class="container hero">
+    <div class="text">
+      <h1 class="title">
+        Hi, I am John,<br />
+        Creative Technologist
+      </h1>
+      <p class="description">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+      <button class="download">Download Resume</button>
+    </div>
+    <div class="avatar">
+      <img src="./img/avatar.jpg" alt="avatar" />
+    </div>
+  </section>
+  <!-- End Hero -->
 </body>
 
 </html>
