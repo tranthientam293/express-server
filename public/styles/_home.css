@@ -1,6 +1,19 @@
+h2.section-title {
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-bottom: 17px;
+}
+
 /* HEADER */
 header {
   padding: 27px 60px;
+  margin-bottom: 40px;
 }
 
 header nav ul.nav-list {
@@ -26,6 +39,7 @@ section.hero {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  margin-bottom: 70px;
 }
 
 .text {
@@ -33,7 +47,7 @@ section.hero {
   max-width: 497px;
 }
 
-h1 {
+h1.main-title {
   font-size: 2.75rem;
   font-weight: 700;
   margin-bottom: 40px;
@@ -72,4 +86,131 @@ button.download {
   background-color: var(--blue-02);
   border-radius: 50%;
   z-index: -1;
+}
+
+/* POST */
+
+section.posts {
+  background-color: var(--blue-02);
+  padding-bottom: 32px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.view-all {
+  font-size: 0.875rem;
+  color: var(--blue-01);
+}
+
+.view-all:hover {
+  opacity: 0.7;
+}
+
+.grid.recent-posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.card {
+  background-color: var(--white-01);
+  padding: 24px 21px 32px;
+  border-radius: 6px;
+}
+
+.card .info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.date,
+.role {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.date {
+  padding-right: 24px;
+  border-right: 1px solid var(--black-01);
+}
+
+.role {
+  padding-left: 24px;
+}
+
+.detail {
+  font-size: 1rem;
+}
+
+/* Feature works */
+section.feature-works {
+  margin-bottom: 80px;
+}
+
+section.feature-works .section-title {
+  margin: 16px 0;
+}
+
+li.list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--gray-02);
+}
+
+.list-item .thumbnail-container {
+  width: 246px;
+  height: auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.work-content .heading {
+  line-height: 1;
+}
+
+.work-content .info {
+  margin-bottom: 16px;
+}
+
+.work-content .info .date {
+  background: var(--black-03);
+  color: var(--white-01);
+  padding: 0 8px;
+  border: none;
+  border-radius: 16px;
+  margin-right: 32px;
+}
+
+.work {
+  color: var(--gray-01);
+}
+
+/* Footer */
+footer.footer {
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.copy-right {
+  font-size: 0.875rem;
+  line-height: 1;
+  text-align: center;
 }
